@@ -8,7 +8,10 @@ import {
 
 import { PhantomWalletAdapter } from "@solana/wallet-adapter-wallets"
 import '@solana/wallet-adapter-react-ui/styles.css';
-import { RequestAirdrop,SendTokens, ShowSolBalance, SignMessage } from './components/RequestAirdrop';
+import { RequestAirdrop } from './components/RequestAirdrop'
+import { SendTokens } from './components/SendTokens'
+import { ShowSolBalance } from './components/ShowSolBalance'
+import { SignMessage } from './components/SignMessage'
 
 function App() {
   const wallets = useMemo(() => [new PhantomWalletAdapter()], [])
